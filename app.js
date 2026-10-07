@@ -657,16 +657,16 @@ function openServiceDetail(serviceKey) {
       <div class="service-opt" onclick="openBookingModal('${item.name}', ${item.priceVal}, ${item.durationVal})">
         <div style="flex:1">
           <div style="display:flex; align-items:center; gap:6px; margin-bottom:2px;">
-            <strong style="font-size:12.5px; color:#181615;">${item.name}</strong>
-            <span style="background:#fdf3d8; color:#8b6508; font-size:9px; font-weight:700; padding:1px 5px; border-radius:4px;">${item.tag}</span>
+            <strong style="font-size:12.5px; color:var(--text-noir);">${item.name}</strong>
+            <span style="background:#fdf2ef; color:var(--dusty-merlot); border:0.5px solid var(--pink-primary); font-size:9px; font-weight:700; padding:1px 5px; border-radius:4px;">${item.tag}</span>
           </div>
-          <div style="font-size:10.5px; color:#6e6b66;">
-            <i class="fa-regular fa-clock"></i> ${item.durationVal} phút • <i class="fa-solid fa-star star-filled"></i> ${item.rating} • <span style="color:#059669; font-weight:700;">Cọc 30%: ${Math.round(item.priceVal*0.3/1000)}k</span>
+          <div style="font-size:10.5px; color:var(--text-muted);">
+            <i class="fa-regular fa-clock"></i> ${item.durationVal} phút • <i class="fa-solid fa-star star-filled"></i> ${item.rating} • <span style="color:var(--dusty-merlot); font-weight:700;">Cọc 30%: ${Math.round(item.priceVal*0.3/1000)}k</span>
           </div>
         </div>
         <div style="text-align:right">
-          <div style="font-size:13px; font-weight:800; color:var(--gold-dark);">${item.price}</div>
-          <button style="margin-top:4px; padding:3px 8px; font-size:10px; font-weight:700; background:var(--royal-noir); color:var(--gold-light); border:1px solid var(--gold-primary); border-radius:6px; cursor:pointer;">Đặt cọc</button>
+          <div style="font-size:13px; font-weight:800; color:var(--dusty-merlot);">${item.price}</div>
+          <button style="margin-top:4px; padding:3px 8px; font-size:10px; font-weight:700; background:var(--dusty-merlot); color:var(--warm-white); border:1px solid var(--pink-primary); border-radius:6px; cursor:pointer;">Đặt cọc</button>
         </div>
       </div>
     `).join('');
@@ -767,7 +767,7 @@ function togglePhoneFrame() {
     container.style.maxWidth = '440px';
     container.style.height = '90vh';
     container.style.borderRadius = '46px';
-    container.style.border = '9px solid #1a2420';
+    container.style.border = '9px solid #2d0e16';
     showToast('Chế độ xem: Mô phỏng iPhone');
   } else {
     container.style.maxWidth = '100%';
